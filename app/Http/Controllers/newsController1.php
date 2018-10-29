@@ -13,7 +13,7 @@ class newsController1 extends Controller
      */
     public function index()
     {
-        //
+        return view('news');
     }
 
     /**
