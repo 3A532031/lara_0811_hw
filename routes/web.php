@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',['as'=>'home.index','uses'=>'homeController1@index']);
+
+Route::get('/',['as'=>'home.index','uses'=>'aboutController1@index']);
+
+Route::get('/',['as'=>'home.index','uses'=>'newsController1@index']);
